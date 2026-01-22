@@ -10,16 +10,16 @@
     </div>
     
     <!-- Elementos decorativos -->
-    <div class="absolute top-20 right-10 w-72 h-72 bg-green-500 rounded-full opacity-10 blur-3xl"></div>
-    <div class="absolute bottom-20 left-10 w-96 h-96 bg-emerald-500 rounded-full opacity-10 blur-3xl"></div>
+    <div class="hidden md:block absolute top-20 right-10 w-72 h-72 bg-green-500 rounded-full opacity-10 blur-3xl"></div>
+    <div class="hidden md:block absolute bottom-20 left-10 w-96 h-96 bg-emerald-500 rounded-full opacity-10 blur-3xl"></div>
     
     <div class="container mx-auto px-4 relative">
         <!-- Badges superiores -->
         <div class="flex flex-wrap justify-center gap-3 mb-8">
-            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium border border-white/20">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium border border-white/20 rounded-full">
                 <i class="fas fa-star text-yellow-400 mr-2"></i>+500 Canchas Disponibles
             </span>
-            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium border border-white/20">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-medium border border-white/20 rounded-full">
                 <i class="fas fa-users text-green-400 mr-2"></i>+10,000 Jugadores Activos
             </span>
         </div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <button class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-bold hover:from-green-700 hover:to-emerald-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <button class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-bold hover:from-green-700 hover:to-emerald-700 transition-all transform transform md:hover:scale-105 shadow-lg hover:shadow-xl">
                     <i class="fas fa-search mr-2"></i>Buscar Cancha
                 </button>
             </div>
@@ -125,9 +125,9 @@
         <!-- Grid de Canchas -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 - Diseño Premium -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 hover:-translate-y-1">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 transform md:hover:scale-105">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=800&q=70" loading="lazy" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <span class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center">
                         <span class="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>Disponible
@@ -188,16 +188,16 @@
                         </div>
                     </div>
                     
-                    <button class="w-full py-3 bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-xl font-semibold hover:from-slate-800 hover:to-slate-700 transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center">
+                    <button class="w-full py-3 bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-xl font-semibold hover:from-slate-800 hover:to-slate-700 transition-all transform transform md:hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center">
                         <i class="fas fa-calendar-check mr-2"></i>Reservar ahora
                     </button>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 hover:-translate-y-1">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 transform md:hover:scale-105">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hCJ00ytDGrDTDXldjA5iiJnC3hH9yx9LDQ&s?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hCJ00ytDGrDTDXldjA5iiJnC3hH9yx9LDQ&s?auto=format&fit=crop&w=800&q=70" loading="lazy" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <span class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">Pocas horas</span>
                     <div class="absolute top-4 left-4 flex flex-wrap gap-2 max-w-[80%] md:max-w-full">
@@ -261,9 +261,9 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 hover:-translate-y-1">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-200 transform md:hover:scale-105">
                 <div class="relative h-56 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=70" loading="lazy" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <span class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center">
                         <span class="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>Disponible
